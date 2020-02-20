@@ -156,7 +156,7 @@ class di_m2_price_lists_gen extends data_interface
 		$fh = fopen($file_path,"w");
 		fwrite($fh,$this->current_conf['header']);
 		fwrite($fh,$this->current_conf['titles']);
-		if($this->current_conf['type'] == 1)
+		if($this->current_conf['make_categories'] == 1)
 		{
 			// для яндекса делаем категории 
 			$cats = $this->make_cats();
